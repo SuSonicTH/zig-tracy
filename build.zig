@@ -4,7 +4,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const tracy_enable = b.option(bool, "tracy_enable", "Enable profiling") orelse true;
+    const tracy_enable = b.option(bool, "tracy_enable", "Enable profiling") orelse false;
     const tracy_on_demand = b.option(bool, "tracy_on_demand", "On-demand profiling") orelse false;
     const tracy_callstack: ?u8 = b.option(u8, "tracy_callstack", "Enforce callstack collection for tracy regions");
     const tracy_no_callstack = b.option(bool, "tracy_no_callstack", "Disable all callstack related functionality") orelse false;
