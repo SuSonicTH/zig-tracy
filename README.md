@@ -1,3 +1,10 @@
+# Forked
+
+I forked https://github.com/cipharius/zig-tracy to make it build with zig 0.13.0
+
+original readme below
+
+
 # Zig tracy client
 Easy to use bindings for the tracy client C API.
 
